@@ -214,6 +214,11 @@ a { color: inherit; }
 }
 .mission-card p + p { margin-top: 2rem; }
 
+.about-me-link {
+    color: #4444ff;
+    text-decoration: underline;
+}
+
 /* Get Started */
 
 .start-section {
@@ -699,4 +704,154 @@ a { color: inherit; }
         transform: none;
         transition: none;
     }
+}
+
+
+
+
+
+
+
+/* ============================================================
+   ABOUT / LEADERSHIP PAGE
+   ============================================================ */
+
+.about-main {
+    padding-bottom: 6rem;
+}
+
+.about-intro {
+    padding-block: clamp(4rem, 8vw, 8rem);
+}
+
+.about-intro h1 {
+    max-width: 60rem;
+    margin: 0;
+    font-size: clamp(3.5rem, 7vw, 7rem);
+    font-weight: 400;
+    line-height: 0.95;
+    letter-spacing: -0.055em;
+}
+
+.about-intro-text {
+    max-width: 45rem;
+    margin: 2rem 0 0;
+    font-size: clamp(1.05rem, 1.5vw, 1.35rem);
+    line-height: 1.6;
+}
+
+
+/* Leadership grid */
+
+.leadership {
+    padding-bottom: 4rem;
+}
+
+.leadership-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: clamp(3rem, 5vw, 5rem) clamp(2rem, 4vw, 4rem);
+}
+
+
+/* Individual member */
+
+.leader-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.leader-photo {
+    width: clamp(10rem, 16vw, 14rem);
+    aspect-ratio: 1;
+    object-fit: cover;
+
+    border-radius: 50%;
+    border: 2px solid var(--black);
+
+    margin-bottom: -2rem;
+
+    position: relative;
+    z-index: 1;
+}
+
+.leader-info {
+    width: 100%;
+    min-height: 17rem;
+
+    padding: 3.5rem 1.75rem 1.75rem;
+
+    background: var(--white);
+    border: 2px solid var(--black);
+    border-radius: var(--radius);
+}
+
+.leader-info h2 {
+    margin: 0;
+    font-size: 1.6rem;
+}
+
+.leader-info ul {
+    padding-left: 1.2rem;
+    margin-left: 0;
+}
+
+.leader-role {
+    margin: 0.35rem 0 1.2rem;
+    font-weight: 600;
+}
+
+.leader-info p:last-child {
+    margin-bottom: 0;
+    line-height: 1.55;
+}
+
+
+/* About page footer link */
+
+.site-footer a {
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.site-footer a:hover {
+    text-decoration: underline;
+}
+
+
+/* Tablet */
+
+@media (max-width: 900px) {
+
+    .leadership-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+
+/* Phone */
+
+@media (max-width: 768px) {
+
+    .leadership-grid {
+        grid-template-columns: 1fr;
+        gap: 3.5rem;
+    }
+
+    .leader-card {
+        max-width: 32rem;
+        width: 100%;
+        margin-inline: auto;
+    }
+
+    .leader-photo {
+        width: 11rem;
+    }
+
+    .leader-info {
+        min-height: auto;
+    }
+
 }

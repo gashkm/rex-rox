@@ -1,6 +1,6 @@
 # REX ROX static website framework
 
-A static, single-page website for the 1727 VEX program REX ROX.
+A static, multi-page website for the 1727 VEX program REX ROX.
 
 ## Files
 - `index.html` — semantic page structure
